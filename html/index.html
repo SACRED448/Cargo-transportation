@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Грузоперевозки в Томске</title>
+    <script src="/js/index.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Header html start -->
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a href="/" class="header__logo-link">
+                        <img src="/img/Logo.png" alt="Грузоперевозки в Томске" class="header__logo-pic">
+                    </a>
+                </div>
+
+                    <nav class="header__nav">
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a href="#" class="header__link">Услуги</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">Контакты</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">О компании</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">Стоимость</a>
+                            </li>
+                            <li class="header__text">
+                                Грузоперевозки в Томске
+                            </li>
+                        </ul>
+                    </nav>
+            </div>
+        </div>
+    </header>
+        <!-- Header html end -->
+
+    <!-- About company start -->
+    <main class="main">
+        <img src="/img/Gazel_with_movers.jpg" alt="Грузчики с газелью" class="pic__gazel__with__movers">
+        <section class="about__company">
+            <h1 class="titles">О компании</h1>
+                <img src="/img/movers_with_box.jpg" alt="Грузчики с коробкой" class="pic__movers__with__box">
+                    <div class="text__near__pic__movers">
+                        Наша компания занимается грузоперевозками уже 10 лет и за это время, мы достаточно преуспели в этой  области.
+                        <br><br>Мы понимаем, насколько тяжело, порой, людям доверить перевезти свои вещи другим.
+                        Ведь никому не хочется, чтобы у их любимых и дорогих вещей появились вмятины, трещины или царапины.
+                        <br><br>Мы с коллегами стараемся понимать клиентов и относится к их вещам, как к своим.
+                    </div>
+        </section>
+        <!-- About company end -->
+
+        <!-- Services start -->
+        <section class="services">
+            <hr>
+            <h1 class="titles">Услуги</h1>
+            <ul class="ul_left">
+                <li>Офисный переезд</li>
+                <li>Перевозка мебели</li>
+                <li>Грузовое такси</li>
+                <li>Квартирный переезд</li>
+            </ul>
+            <ul class="ul_right">
+                <li>Перевозка вещей</li>
+                <li>Дачный переезд</li>
+                <li>Перевозка бытовой техники</li>
+                <li>Перевозка стройматериалов</li>
+            </ul>
+        </section>
+        <!-- Services end -->
+
+
+        <!-- Contacts start -->
+            
+            <section class="contacts">
+                <hr>
+                <h1 style="margin-left: 245px;" class="titles">Контакты</h1>
+                <div class="number__of__phone">
+                    Телефон для связи: <strong>+7 (952) 807-21-60</strong> 
+                </div>
+            </section>
+
+        <!-- Contacts end -->
+
+        
+        <!-- Price and calculator start -->
+        
+            <section class="price">
+                <hr>
+                <h1 class="titles">Стоимость</h1>
+                <div class="cost__description">
+                    Хотите узнать цены перевозки?
+                    Для этого у нас есть специальный калькулятор.
+                    <br><br><strong>Калькулятор:</strong>
+                </div>
+            </section>
+
+            <section class="calculator">
+                <div class="main">
+                    <div class="field">
+                        <label for="1">Длительность перевозки:</label>
+                        <input id="1" type="text" name="hours" placeholder="Количество часов"><br><br>
+                        <label for="2">Кол-во грузчиков:</label>
+                        <input id="2" type="text" name="movers" placeholder="Количество грузчиков"><br><br>
+                        <label for="3">Тип перевозки:</label>
+                        <select id="3" name="type">
+                            <option>Офисный переезд</option>
+                            <option>Перевозка мебели</option>
+                            <option>Грузовое такси</option>
+                            <option>Квартирный переезд</option>
+                            <option>Перевозка вещей</option>
+                            <option>Дачный переезд</option>
+                            <option>Перевозка бытовой техники</option>
+                            <option>Перевозка стройматериалов</option>
+                        </select><br><br>
+                        <label for="4">Итого: </label>
+                        <input id="4" name="sum" type="text" readonly placeholder="Сумма"><br><br>
+                        <button onclick="sum()">Рассчитать</button>
+                   </div>
+                </div>
+            </section>
+            
+        <!-- Price and calculator end -->
+
+        <img src="/img/Wolf.jpg" alt="Волк с номером телефона" class="pic__wolf">
+        
+        <!-- Footer start -->
+
+            <footer class="footer">
+                
+            </footer>
+
+        <!-- Footer end -->
+        
+    </main>
+<!-- <h1>Калькулятор:</h1>
+    Длительность перевозки: <input id="1" type="text" name="hours" placeholder="Количество часов"><br><br>
+    Кол-во грузчиков: <input id="2" type="text" name="movers" placeholder="Количество грузчиков"><br><br>
+    Тип перевозки: <select id="3" name="type">
+    <option>Офисный переезд</option>
+    <option>Перевозка мебели</option>
+    <option>Грузовое такси</option>
+    <option>Квартирный переезд</option>
+    <option>Перевозка вещей</option>
+    <option>Дачный переезд</option>
+    <option>Перевозка бытовой техники</option>
+    <option>Перевозка стройматериалов</option>
+</select><br><br>
+    Итого: <input id="4" name="sum" type="text" readonly placeholder="Сумма"><br><br>
+    <button onclick="sum()">Рассчитать</button> -->
+    
+</body>
+</html>
