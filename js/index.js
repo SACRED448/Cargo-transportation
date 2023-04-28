@@ -13,10 +13,10 @@
  */
 /*
 Тарифы:
-1ч работы такси - 300 руб
-1ч работы грузчиков - 200 руб
+1ч работы грузчиков - 400 руб
  */
 
+// Добавить блок try{} catch{}
 let sum = function () {
     let prozent = document.getElementById('3').value;
     switch (prozent) {
@@ -33,9 +33,9 @@ let sum = function () {
             prozent = 1.03;
             break;
     }
-    let totalSum = (document.getElementById('1').value * 300
-            + document.getElementById('2').value * 200) * prozent;
-    document.getElementById('4').value = totalSum;
+    let totalSum = document.getElementById('1').value * 400
+            * document.getElementById('2').value * prozent;
+    document.getElementById('4').value = totalSum + " руб";
 };
 
 

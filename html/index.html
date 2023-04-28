@@ -8,11 +8,11 @@
 </head>
 <body>
     <!-- Header html start -->
-    <header class="header">
+    <header class="header" style="z-index: 3;">
         <div class="wrapper">
             <div class="header__wrapper">
                 <div class="header__logo">
-                    <a href="/" class="header__logo-link">
+                    <a href="#" class="header__logo-link">
                         <img src="/img/Logo.png" alt="Грузоперевозки в Томске" class="header__logo-pic">
                     </a>
                 </div>
@@ -20,16 +20,16 @@
                     <nav class="header__nav">
                         <ul class="header__list">
                             <li class="header__item">
-                                <a href="#" class="header__link">Услуги</a>
+                                <a href="#Услуги" class="header__link">Услуги</a>
                             </li>
                             <li class="header__item">
-                                <a href="#" class="header__link">Контакты</a>
+                                <a href="#Контакты" class="header__link">Контакты</a>
                             </li>
                             <li class="header__item">
-                                <a href="#" class="header__link">О компании</a>
+                                <a href="#О компании" class="header__link">О компании</a>
                             </li>
                             <li class="header__item">
-                                <a href="#" class="header__link">Стоимость</a>
+                                <a href="#Стоимость" class="header__link">Стоимость</a>
                             </li>
                             <li class="header__text">
                                 Грузоперевозки в Томске
@@ -45,7 +45,7 @@
     <main class="main">
         <img src="/img/Gazel_with_movers.jpg" alt="Грузчики с газелью" class="pic__gazel__with__movers">
         <section class="about__company">
-            <h1 class="titles">О компании</h1>
+            <h1 id="О компании" class="titles">О компании</h1>
                 <img src="/img/movers_with_box.jpg" alt="Грузчики с коробкой" class="pic__movers__with__box">
                     <div class="text__near__pic__movers">
                         Наша компания занимается грузоперевозками уже 10 лет и за это время, мы достаточно преуспели в этой  области.
@@ -59,7 +59,7 @@
         <!-- Services start -->
         <section class="services">
             <hr>
-            <h1 class="titles">Услуги</h1>
+            <h1 id="Услуги" class="titles">Услуги</h1>
             <ul class="ul_left">
                 <li>Офисный переезд</li>
                 <li>Перевозка мебели</li>
@@ -80,9 +80,14 @@
             
             <section class="contacts">
                 <hr>
-                <h1 style="margin-left: 245px;" class="titles">Контакты</h1>
+                <h1 id="Контакты" style="margin-left: 430px;" class="titles">Контакты</h1>
                 <div class="number__of__phone">
-                    Телефон для связи: <strong>+7 (952) 807-21-60</strong> 
+                    Телефон для связи: <strong>+7 (952) 807-21-60</strong>
+                    <div class="contact__logos">
+                        <br><a href="https://api.whatsapp.com/send?phone=89528072160"><img src="/img/whatsapp 1.png" alt="Лого WhatsApp"></a>
+                        <a href="https://t.me/+79528072160"><img src="/img/telegram 1.png" alt="Лого Telegram"></a>
+                    </div>
+                      
                 </div>
             </section>
 
@@ -93,7 +98,7 @@
         
             <section class="price">
                 <hr>
-                <h1 class="titles">Стоимость</h1>
+                <h1 id="Стоимость" class="titles">Стоимость</h1>
                 <div class="cost__description">
                     Хотите узнать цены перевозки?
                     Для этого у нас есть специальный калькулятор.
@@ -127,33 +132,14 @@
             </section>
             
         <!-- Price and calculator end -->
-
-        <img src="/img/Wolf.jpg" alt="Волк с номером телефона" class="pic__wolf">
         
-        <!-- Footer start -->
+        <!-- Section end start -->
 
-            <footer class="footer">
+         <img src="/img/Wolf.jpg" alt="Волк с номером телефона" class="pic__wolf">
                 
-            </footer>
 
-        <!-- Footer end -->
-        
     </main>
-<!-- <h1>Калькулятор:</h1>
-    Длительность перевозки: <input id="1" type="text" name="hours" placeholder="Количество часов"><br><br>
-    Кол-во грузчиков: <input id="2" type="text" name="movers" placeholder="Количество грузчиков"><br><br>
-    Тип перевозки: <select id="3" name="type">
-    <option>Офисный переезд</option>
-    <option>Перевозка мебели</option>
-    <option>Грузовое такси</option>
-    <option>Квартирный переезд</option>
-    <option>Перевозка вещей</option>
-    <option>Дачный переезд</option>
-    <option>Перевозка бытовой техники</option>
-    <option>Перевозка стройматериалов</option>
-</select><br><br>
-    Итого: <input id="4" name="sum" type="text" readonly placeholder="Сумма"><br><br>
-    <button onclick="sum()">Рассчитать</button> -->
+
     
 </body>
 </html>

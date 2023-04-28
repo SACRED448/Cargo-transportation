@@ -408,6 +408,7 @@ textarea {
 
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 *, *::before, *::after {
     box-sizing: inherit;
@@ -568,6 +569,10 @@ hr {
     margin-left: 50px;
 }
 
+.contact__logos {
+    margin-left: 200px;
+}
+
 strong {
     font-weight: bold;
 }
@@ -633,18 +638,148 @@ button {
     border-radius: 200px;
 }
 
+
 /* Price and calculator sector end */
 
 
-/* Footer sector start */
+/* Адаптив под разные разрешения */
 
-.footer {
-    background-color: #B1CCF5;
-    
+@media (max-width: 1920px) {
+
+   .header__text {
+      margin-left: 800px;
+   }
+
+   .header__logo-pic {
+        left: 0;
+        position: static;
+   }
+
+   .wrapper {
+        max-width: 1920px;
+   }
+
+   .pic__gazel__with__movers {
+        width: 115.2%;
+   }
+
+   .titles {
+        margin-left: 750px;
+   }
+
+   .pic__movers__with__box {
+        margin-left: 70px;
+   }
+
+   .text__near__pic__movers {
+        margin-left: 660px;
+        font-size: 20px;
+   }
+
+   .ul_left {
+        font-size: 22px;
+   }
+
+   .ul_right {
+        font-size: 22px;
+   }
+
+   #Контакты {
+        padding: 100px;
+   }
+
+   .number__of__phone {
+        margin-left: 260px;
+   }
+
+   .cost__description {
+        margin-left: 270px;
+    }
+
+    .field {
+        margin-left: 120px;
+    }
+
+    .pic__wolf {
+        padding: 175px;
+        margin-left: 120px;
+   } 
+
+
+   
 }
 
+@media (max-width: 1510px) {
 
-/* Footer sector end */
+    .number__of__phone {
+        margin-left: 250px;
+   }
+
+    hr {
+        width: 120%;
+   }
+}
+
+@media (max-width: 1366px) {
+
+    .pic__gazel__with__movers {
+        width: 120%;
+    }
+
+    .header__text {
+        margin-left: 400px;
+    }
+
+    .titles {
+        margin-left: 550px;
+   }
+
+    .number__of__phone {
+        margin-left: 184px;
+    }
+
+    hr {
+        width: 120%;
+    }
+
+   .pic__movers__with__box {
+        margin-left: 10px;
+    }
+
+    .text__near__pic__movers {
+        max-width: 720px;
+        margin-left: 600px;
+        font-size: 19px;
+    }
+
+    .ul_left {
+        font-size: 20px;
+    }
+
+   .ul_right {
+        font-size: 20px;
+    }
+
+    #Контакты {
+        margin-right: 100px;
+    }
+    
+    .number__of__phone {
+        padding: 40px;
+        font-size: 27px;
+        margin-left: 250px;
+    }
+
+    .cost__description {
+        margin-left: 170px;
+    }
+
+    .field {
+        margin-left: 20px;
+    }
+
+
+}
 
 
 /* Main section styles end */
